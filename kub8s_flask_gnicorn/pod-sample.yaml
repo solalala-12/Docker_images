@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: flask-api-pod
+ labels:
+  app: test
+spec:
+ strategy:
+  type: RollingUpdate
+  rollingUpdate:
+    maxUnavailable: 1
+    maxSurge: 1
+ replicas: 2
+ selector :
+  matchLabels:
+    app: test
+ template:
+  metadata:
+    labels:
+      app: test
+  spec:
+   containers:
+   - name: flask-sora
+     image: charmingsora12/flask_gunicorn:1
+     ports:
+     - containerPort: 5000
+
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: flask-service
+spec:
+  type: NodePort
+  ports:
+  - name: http
+    port: 8080
+    targetPort: 5000
+    nodePort: 30001
+    protocol: 'TCP'
+  selector:
+    app: test

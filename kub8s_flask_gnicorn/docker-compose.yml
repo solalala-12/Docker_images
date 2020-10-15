@@ -1,0 +1,13 @@
+services:
+  api:
+    build: .
+    volumes:
+      - .:/root/flask_api_demo
+    ports:
+      - 5005:5000
+      - 5672:5672
+    environment: 
+      PYTHONPATH : "/root/flask_api_demo"
+    command : bash -c 'sh start_celery.sh'
+    
+

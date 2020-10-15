@@ -1,0 +1,4 @@
+Flask
+celery==4.4.7
+gunicorn
+flower
