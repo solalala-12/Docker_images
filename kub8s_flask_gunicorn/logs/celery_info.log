@@ -1,0 +1,152 @@
+[2020-10-20 04:20:50,726: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 04:20:50,740: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 04:20:50,918: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 04:20:50,924: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 04:20:51,781: INFO/MainProcess] mingle: all alone
+[2020-10-20 04:20:51,820: INFO/MainProcess] celery@flask-api-pod-5fcdf7d4dd-f8c8x ready.
+[2020-10-20 04:20:51,939: INFO/MainProcess] mingle: all alone
+[2020-10-20 04:20:51,962: INFO/MainProcess] celery@flask-api-pod-5fcdf7d4dd-nhntt ready.
+[2020-10-20 04:24:02,668: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 04:24:02,675: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 04:24:02,967: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 04:24:02,973: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 04:24:03,702: INFO/MainProcess] mingle: all alone
+[2020-10-20 04:24:03,724: INFO/MainProcess] celery@flask-api-pod-5fcdf7d4dd-cbxwk ready.
+[2020-10-20 04:24:03,986: INFO/MainProcess] mingle: all alone
+[2020-10-20 04:24:04,019: INFO/MainProcess] celery@flask-api-pod-5fcdf7d4dd-85c2q ready.
+[2020-10-20 04:31:17,210: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 04:31:17,222: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 04:31:18,242: INFO/MainProcess] mingle: all alone
+[2020-10-20 04:31:18,262: INFO/MainProcess] celery@5dc71407de5b ready.
+[2020-10-20 04:38:35,048: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 04:38:35,055: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 04:38:36,077: INFO/MainProcess] mingle: all alone
+[2020-10-20 04:38:36,103: INFO/MainProcess] celery@bd1578c83daa ready.
+[2020-10-20 04:39:21,962: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 04:39:21,976: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 04:39:22,992: INFO/MainProcess] mingle: all alone
+[2020-10-20 04:39:23,010: INFO/MainProcess] celery@862224ccbf00 ready.
+[2020-10-20 04:46:21,056: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 04:46:21,065: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 04:46:22,081: INFO/MainProcess] mingle: all alone
+[2020-10-20 04:46:22,095: INFO/MainProcess] celery@862224ccbf00 ready.
+[2020-10-20 04:47:10,977: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 04:47:10,985: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 04:47:12,019: INFO/MainProcess] mingle: all alone
+[2020-10-20 04:47:12,029: INFO/MainProcess] celery@862224ccbf00 ready.
+[2020-10-20 04:47:58,727: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 04:47:58,736: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 04:47:59,754: INFO/MainProcess] mingle: all alone
+[2020-10-20 04:47:59,764: INFO/MainProcess] celery@862224ccbf00 ready.
+[2020-10-20 04:49:55,666: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 04:49:55,673: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 04:49:56,706: INFO/MainProcess] mingle: all alone
+[2020-10-20 04:49:56,748: INFO/MainProcess] celery@911686d604c6 ready.
+[2020-10-20 04:55:51,790: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 04:55:51,798: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 04:55:52,812: INFO/MainProcess] mingle: all alone
+[2020-10-20 04:55:52,832: INFO/MainProcess] celery@911686d604c6 ready.
+[2020-10-20 04:57:01,220: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 04:57:01,228: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 04:57:02,245: INFO/MainProcess] mingle: all alone
+[2020-10-20 04:57:02,255: INFO/MainProcess] celery@911686d604c6 ready.
+[2020-10-20 05:03:58,047: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 05:03:58,055: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 05:03:59,078: INFO/MainProcess] mingle: all alone
+[2020-10-20 05:03:59,088: INFO/MainProcess] celery@911686d604c6 ready.
+[2020-10-20 05:05:28,629: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 05:05:28,637: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 05:05:29,654: INFO/MainProcess] mingle: all alone
+[2020-10-20 05:05:29,665: INFO/MainProcess] celery@911686d604c6 ready.
+[2020-10-20 05:06:16,755: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 05:06:16,762: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 05:06:17,777: INFO/MainProcess] mingle: all alone
+[2020-10-20 05:06:17,798: INFO/MainProcess] celery@911686d604c6 ready.
+[2020-10-20 05:09:02,386: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 05:09:02,392: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 05:09:03,408: INFO/MainProcess] mingle: all alone
+[2020-10-20 05:09:03,417: INFO/MainProcess] celery@911686d604c6 ready.
+[2020-10-20 05:09:32,798: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 05:09:32,804: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 05:09:33,817: INFO/MainProcess] mingle: all alone
+[2020-10-20 05:09:33,828: INFO/MainProcess] celery@911686d604c6 ready.
+[2020-10-20 05:12:27,096: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 05:12:27,105: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 05:12:28,135: INFO/MainProcess] mingle: all alone
+[2020-10-20 05:12:28,144: INFO/MainProcess] celery@911686d604c6 ready.
+[2020-10-20 05:13:14,797: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 05:13:14,811: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 05:13:15,841: INFO/MainProcess] mingle: all alone
+[2020-10-20 05:13:15,852: INFO/MainProcess] celery@911686d604c6 ready.
+[2020-10-20 05:14:54,103: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 05:14:54,110: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 05:14:55,134: INFO/MainProcess] mingle: all alone
+[2020-10-20 05:14:55,144: INFO/MainProcess] celery@911686d604c6 ready.
+[2020-10-20 05:23:48,278: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 05:23:48,284: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 05:23:49,309: INFO/MainProcess] mingle: all alone
+[2020-10-20 05:23:49,331: INFO/MainProcess] celery@911686d604c6 ready.
+[2020-10-20 05:25:01,078: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 05:25:01,085: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 05:25:02,108: INFO/MainProcess] mingle: all alone
+[2020-10-20 05:25:02,128: INFO/MainProcess] celery@911686d604c6 ready.
+[2020-10-20 05:26:06,833: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 05:26:06,844: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 05:26:07,861: INFO/MainProcess] mingle: all alone
+[2020-10-20 05:26:07,871: INFO/MainProcess] celery@911686d604c6 ready.
+[2020-10-20 05:27:55,561: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 05:27:55,571: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 05:27:56,597: INFO/MainProcess] mingle: all alone
+[2020-10-20 05:27:56,607: INFO/MainProcess] celery@911686d604c6 ready.
+[2020-10-20 05:30:11,311: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 05:30:11,321: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 05:30:12,359: INFO/MainProcess] mingle: all alone
+[2020-10-20 05:30:12,369: INFO/MainProcess] celery@911686d604c6 ready.
+[2020-10-20 05:32:25,639: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 05:32:25,647: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 05:32:26,662: INFO/MainProcess] mingle: all alone
+[2020-10-20 05:32:26,671: INFO/MainProcess] celery@911686d604c6 ready.
+[2020-10-20 05:36:22,257: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 05:36:22,265: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 05:36:23,281: INFO/MainProcess] mingle: all alone
+[2020-10-20 05:36:23,293: INFO/MainProcess] celery@911686d604c6 ready.
+[2020-10-20 06:08:08,030: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 06:08:08,038: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 06:08:08,334: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 06:08:08,341: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 06:08:09,060: INFO/MainProcess] mingle: all alone
+[2020-10-20 06:08:09,101: INFO/MainProcess] celery@flask-api-pod-5fcdf7d4dd-9q2bl ready.
+[2020-10-20 06:08:09,356: INFO/MainProcess] mingle: all alone
+[2020-10-20 06:08:09,378: INFO/MainProcess] celery@flask-api-pod-5fcdf7d4dd-hfn2s ready.
+[2020-10-20 06:11:46,135: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 06:11:46,147: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 06:11:47,166: INFO/MainProcess] mingle: all alone
+[2020-10-20 06:11:47,176: INFO/MainProcess] celery@911686d604c6 ready.
+[2020-10-20 06:12:17,596: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 06:12:17,604: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 06:12:18,630: INFO/MainProcess] mingle: all alone
+[2020-10-20 06:12:18,640: INFO/MainProcess] celery@911686d604c6 ready.
+[2020-10-20 06:13:38,457: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 06:13:38,467: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 06:13:39,484: INFO/MainProcess] mingle: all alone
+[2020-10-20 06:13:39,498: INFO/MainProcess] celery@911686d604c6 ready.
+[2020-10-20 06:14:48,176: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 06:14:48,185: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 06:14:49,219: INFO/MainProcess] mingle: all alone
+[2020-10-20 06:14:49,229: INFO/MainProcess] celery@911686d604c6 ready.
+[2020-10-20 06:40:06,557: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 06:40:06,568: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 06:40:06,624: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 06:40:06,634: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 06:40:07,600: INFO/MainProcess] mingle: all alone
+[2020-10-20 06:40:07,624: INFO/MainProcess] celery@flask-api-pod-594fb5849c-gghd8 ready.
+[2020-10-20 06:40:07,649: INFO/MainProcess] mingle: all alone
+[2020-10-20 06:40:07,672: INFO/MainProcess] celery@flask-api-pod-594fb5849c-qx4b2 ready.
+[2020-10-20 06:41:30,134: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 06:41:30,170: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 06:41:30,330: INFO/MainProcess] Connected to amqp://rabbit_sora:**@127.0.0.1:5672/rabbit
+[2020-10-20 06:41:30,337: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-20 06:41:31,208: INFO/MainProcess] mingle: all alone
+[2020-10-20 06:41:31,226: INFO/MainProcess] celery@flask-api-pod-594fb5849c-n7h89 ready.
+[2020-10-20 06:41:31,351: INFO/MainProcess] mingle: all alone
+[2020-10-20 06:41:31,374: INFO/MainProcess] celery@flask-api-pod-594fb5849c-rz8bh ready.

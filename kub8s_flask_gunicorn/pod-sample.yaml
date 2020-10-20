@@ -1,43 +1,55 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
- name: flask-api-pod
- labels:
-  app: test
-spec:
- strategy:
-  type: RollingUpdate
-  rollingUpdate:
-    maxUnavailable: 1
-    maxSurge: 1
- replicas: 2
- selector :
-  matchLabels:
+  name: flask-api-pod
+  labels:
     app: test
- template:
-  metadata:
-    labels:
+spec:
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  replicas: 2
+  selector :
+    matchLabels:
       app: test
-  spec:
-   containers:
-   - name: flask-sora
-     image: charmingsora12/flask_gunicorn:1
-     ports:
-     - containerPort: 5000
-
+  template:
+    metadata:
+      labels:
+        app: test
+    spec:
+      volumes:
+        - name: my-hostpath-volume
+          hostPath:
+            path: /c/Users/Owner/python_env/basic_env/Flask-sora
+            type: Directory
+      containers:
+      - name: flask-sora
+        image: charmingsora12/flask_gunicorn:4
+        volumeMounts:
+          - name: my-hostpath-volume
+            mountPath: /root/flask_api_demo
+        ports:
+        - containerPort: 5000
+        command: ["/bin/sh","-c"]
+        args: ["sh start_celery.sh && tail -f /dev/null"]
 
 ---
 apiVersion: v1
 kind: Service
 metadata:
   name: flask-service
+  labels:
+    app: test
 spec:
   type: NodePort
   ports:
   - name: http
-    port: 8080
+    port: 80
     targetPort: 5000
     nodePort: 30001
     protocol: 'TCP'
   selector:
     app: test
+  

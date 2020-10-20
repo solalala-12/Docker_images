@@ -8,6 +8,6 @@ services:
       - 5672:5672
     environment: 
       PYTHONPATH : "/root/flask_api_demo"
-    command : bash -c 'python3 app.py'
+    command : bash -c 'sh start_celery.sh && tail -f /dev/null'
     
 

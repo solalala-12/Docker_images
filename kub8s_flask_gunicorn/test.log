@@ -1,0 +1,4 @@
+INFO 2019-08-12 02:22:50,916 tasks 51834 139952678876992 [KSAdmin notify API] TRY TO CALL API: 1 times
+INFO 2019-08-12 02:22:50,948 tasks 51834 139952678876992 [KSAdmin notify API] the API has been successfully called: 200 / Thanks for the notice! KsAdmin will run its schedulers
+INFO 2019-08-12 02:23:51,009 tasks 51834 139952678876992 [AnalyAdmin notify API] TRY TO CALL API: 1 times
+INFO 2019-08-12 02:23:51,068 tasks 51834 139952678876992 [AnalyAdmin notify API] the API has been successfully called: 200 / {}
