@@ -28,9 +28,6 @@ def index():
 @celery.task(bind=True)
 def get_model(self):
 
-    myHostname = "169.56.76.27"
-    myUsername = "analy"
-    myPassword = "Kyowon2017!"
 
     with pysftp.Connection(host=myHostname, username=myUsername, password=myPassword) as sftp:
         print ("Connection succesfully stablished ... ")
