@@ -1,5 +1,8 @@
 Flask
 celery==4.4.7
 gunicorn
-flower
 pysftp==0.2.8
+cryptography==3.2.1
+azure-storage-blob
+joblib
+numpy

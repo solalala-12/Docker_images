@@ -4,7 +4,7 @@ services:
     volumes:
       - .:/root/flask_api_demo
     ports:
-      - 5005:5000
+      - 8000:5000
       - 5672:5672
     environment: 
       PYTHONPATH : "/root/flask_api_demo"
