@@ -49,13 +49,13 @@ spec:
         - name : MODEL_TYPE
           value: "tf"
         - name : MY_HOST_NAME
-          value: "169.56.76.27"
+          value: "000.000.000"
         - name : MY_USER_NAME
           value : "d0106"
         - name : MY_PASSWORD
           value : "d0106!@#$"
         - name : AZURE_STORAGE_CONNECTION_STRING
-          value : "DefaultEndpointsProtocol=https;AccountName=adlskyowon;AccountKey=gc/HnTwmqwFZfozTFOAIx7ul5cNbwTjJCKB3ycN0gNo5ZSFN0AfwIIuQlB/jFG0Y+8ectXkBLdMWgL9BkLN82w==;EndpointSuffix=core.windows.net"
+          value : "DefaultEndpointsProtocol=_"
           
         volumeMounts:
           - name: my-hostpath-volume
