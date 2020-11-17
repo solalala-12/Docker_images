@@ -4,7 +4,7 @@ FROM ubuntu:18.04
 WORKDIR /root/model_rest_api
 
 RUN apt-get update && apt-get upgrade -y 
-RUN apt-get install -y build-essential python3.7 python3-pip 
+RUN apt-get install -y build-essential python3.7 python3-pip curl
 RUN pip3 install --upgrade pip
 
 ADD requirements.txt /root/model_rest_api/requirements.txt

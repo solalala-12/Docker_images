@@ -53,15 +53,11 @@ app.config['JSON_AS_ASCII']=False
 celery = Celery(app.name, broker=app.config['CELERY_BROKER_URL'])
 celery.conf.update(app.config)
 
-@app.route('/',methods=['POST'])
-def index():
-    result_dict = {"state":"done"}
-    _ = model_load()
-    resp = make_response(jsonify(result_dict))
-    return resp
 
 
-@app.route('/result',methods=['POST']) 
+
+
+@app.route('/post',methods=['POST']) 
 def hi():
 
     global target_model
@@ -69,11 +65,6 @@ def hi():
     data = request.get_json(force=True)
 
     input_data = data["test"]
-
-    if target_model==None:
-        logger.info(" ------------ model reload----------")
-        target_model = model_load()
-    
 
     if model_type=='sklearn':
         print('모델 정보 :', target_model)
@@ -107,6 +98,8 @@ def hi():
 @app.route('/model_download')
 def model_download():
 
+    
+    
     check_model_state=download(target='model')
     _ = model_load()
 
@@ -280,6 +273,9 @@ def download_from_sftp(target):
     return True
 
 
+
+
+@app.route('/model_load',methods=['POST'])
 def model_load():
     '''
     model_type=os.getenv('MODEL_TYPE')
@@ -305,7 +301,6 @@ def model_load():
         else:
             from k8s_api_model import k8s_api_model
             import tensorflow as tf
-            from tensorflow import keras
             tf.reset_default_graph()
             target_model = k8s_api_model()
             if 'build' in methods(k8s_api_model):
@@ -321,7 +316,10 @@ def model_load():
         return False
 
     logger.info(' * * * * Succeed load model * * * *')    
-    return target_model
+    return 'done'
+
+
+
 
             
 def methods(cls):
@@ -330,6 +328,8 @@ def methods(cls):
 
 
 if __name__ == '__main__':
+
+
     app.run(host='0.0.0.0', debug=True)
 
 

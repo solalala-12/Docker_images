@@ -37,7 +37,7 @@ spec:
       volumes:
         - name: my-hostpath-volume
           hostPath:
-            path: /c/Users/Owner/python_env/basic_env/model_rest_api_workspace
+            path: /d/REST_API_TEST2/k8s_flask
             type: Directory
       containers:
       - name: flask-sora
@@ -64,4 +64,3 @@ spec:
         - containerPort: 5000
         command: ["/bin/sh","-c"]
         args: ["sh start_celery.sh && tail -f /dev/null"]
-  
