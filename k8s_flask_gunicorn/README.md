@@ -23,11 +23,11 @@
  4. K8s 컨테이너 실행
 	 `kubectl apply -f pod-info.yaml`
 
- 5. http://{serverIp}:{serverPort}/ <br>
+ 5. `http://{serverIp}:{serverPort}/` <br>
  	post 요청 실행(모델이 정상 로드되었는지 확인하기 위함) <br>
 	모델이 정상 로드 완료 되면 {"state": "done"} 이 return된다.
 
- 6. http://{serverIp}:{serverPort}/result <br>
+ 6. `http://{serverIp}:{serverPort}/result` <br>
 
 	input : {"test": input_data}
 	output : {"result" : output_data}
@@ -85,7 +85,7 @@
 				...
 				
 		def load(self,model_path):
-		
+
 			ckpt=tf.train.get_checkpoint_state(model_path)
 			...
 			sess = tf.Session()
