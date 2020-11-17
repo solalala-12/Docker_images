@@ -46,7 +46,7 @@ app = Flask(__name__)
 # 보안 모델
 # CORS(app)
 
-app.config['CELERY_BROKER_URL'] = 'amqp://rabbit_sora:dlthfk77@localhost/rabbit'
+app.config['CELERY_BROKER_URL'] = 'amqp://rabbit_sora12:dlthfk77@localhost/rabbit1'
 app.config['CELERY_RESULT_BACKEND'] = 'rpc://'
 app.config['JSON_AS_ASCII']=False
 
