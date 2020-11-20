@@ -3,8 +3,6 @@ FROM ubuntu:18.04
 
 WORKDIR /home/multi-speaker-tacotron
 
-# 메인테이너 정보 (옵션)
-MAINTAINER sora charmingsora12@gmail.com
 
 # Upgrade installed packages
 RUN apt-get update && apt-get upgrade -y 

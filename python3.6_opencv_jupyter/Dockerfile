@@ -2,8 +2,6 @@ FROM python:3.6
 
 WORKDIR /home/recog_cardnum
 
-# Information of Containers (optional)
-MAINTAINER sora charmingsora12@gmail.com
 
 ENV PYTHONUNBUFFERED 1
 

@@ -37,7 +37,7 @@ spec:
       volumes:
         - name: my-hostpath-volume
           hostPath:
-            path: /d/REST_API_TEST2/k8s_flask
+            path: {local path}
             type: Directory
       containers:
       - name: flask-sora
@@ -49,13 +49,13 @@ spec:
         - name : MODEL_TYPE
           value: "tf"
         - name : MY_HOST_NAME
-          value: "169.56.76.27"
+          value: "{ip}"
         - name : MY_USER_NAME
-          value : "d0106"
+          value : "{name}"
         - name : MY_PASSWORD
-          value : "d0106!@#$"
+          value : "{password}"
         - name : AZURE_STORAGE_CONNECTION_STRING
-          value : "DefaultEndpointsProtocol=https;AccountName=adlskyowon;AccountKey=gc/HnTwmqwFZfozTFOAIx7ul5cNbwTjJCKB3ycN0gNo5ZSFN0AfwIIuQlB/jFG0Y+8ectXkBLdMWgL9BkLN82w==;EndpointSuffix=core.windows.net"
+          value : "{storage key}"
           
         volumeMounts:
           - name: my-hostpath-volume
