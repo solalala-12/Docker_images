@@ -7,20 +7,24 @@
 - 모델은 YYYYMMDD.zip 형태로 관리하며 model_download url 호출 시 **가장 최근 날짜의 zip 모델**파일을 다운로드하고 자동 로드함.
 -  소스는 MODEL_NAME.zip으로 관리한다.
 
-> ex)
-> model_name= test_model로 설정 시,
- model path = ./test_model/model/20201104.zip  
- sources path = ./test_model/src/test_model.zip
+	> ex)
+	> model_name= test_model로 설정 시,
+	model path = ./test_model/model/20201104.zip  
+	sources path = ./test_model/src/test_model.zip
 
 
 
 #  1. 환경 세팅
 
  1. Install Docker
- 2. Install K8sDocker image build 
- 3. pod-info.yaml 환경변수 세팅 (hostPath, MODEL_NAME, MODEL_TYPE, 인증 정보 등)
-	 MODEL_TYPE= 'tf' or 'sklearn'
- 4. K8s 컨테이너 실행
+ 2. Install K8s  
+ 3. pod-info.yaml 환경변수 세팅 <br>
+ 	- hostPath : pod-info.yml이 있는 경로 (컨테이너와 로컬 공유 경로) 
+	- MODEL_NAME : 모델 파일의 압축폴더 이름 
+	- MODEL_TYPE : tf or sklearn
+	- 클라우드 접근권한  FTP 서버 정보 등 
+	 
+ 4. K8s 컨테이너 실행 <br>
 	 `kubectl apply -f pod-info.yaml`
 
  5. `http://{serverIp}:{serverPort}/` <br>
@@ -28,8 +32,7 @@
 	모델이 정상 로드 완료 되면 {"state": "done"} 이 return된다.
 
  6. `http://{serverIp}:{serverPort}/result` <br>
-
-	input : {"test": input_data}
+	input : {"test": input_data} <br>
 	output : {"result" : output_data}
  
 
@@ -44,8 +47,8 @@
   
 
 
-> 소스 다운로드 후 로드 되어있던 모델로 Test 진행.  
-모델 다운로드 후 변경 모델로 Test 진행.  
+	> 소스 다운로드 후 로드 되어있던 모델로 Test 진행.  
+	모델 다운로드 후 변경 모델로 Test 진행.  
 
 
 # 3. 소스 구성 
@@ -53,7 +56,7 @@
 ### Tensorflow
 - ####  workspace
 	```
-	workspace/
+	test_model/
 		└── src/
 			└── requirements.txt 
 		    └── data (test에 사용되는 data sets)
@@ -72,9 +75,9 @@
 	 
 
 	```
-	@ src/ex_model.py
+	@ src/k8s_api_model.py
 
-	class ex_model(object):
+	class k8s_api_model(object):
 
 		def __init__(self):
 		
@@ -100,7 +103,7 @@
  ### Scikit-Learn
 - ####  workspace
 	```
-	workspace/
+	test_model_sci/
 		└── src/
 			└── requirements.txt
 		└── model/
