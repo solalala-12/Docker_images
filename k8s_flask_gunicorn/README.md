@@ -93,9 +93,9 @@
 				│  requirements.txt
 				│  
 				└─data
-						ix_to_word_3000.pkl
-						naver_news_2999_even.csv
-						word_to_ix_3000.pkl   
+					  ix_to_word_3000.pkl
+					  naver_news_2999_even.csv
+					  word_to_ix_3000.pkl   
 	```
 
  - #### Rules
