@@ -17,7 +17,10 @@
 #  1. 환경 세팅
 
  1. Install Docker
- 2. Install K8s  
+ 2. Install K8s <br>
+	설치 방법 참조 (But, Docker 버전마다 UI가 다를 수 있음) <br>
+	https://nirsa.tistory.com/119
+
  3. pod-info.yaml 환경변수 세팅 <br>
  	- hostPath : pod-info.yml이 있는 경로 (컨테이너와 로컬 공유 경로) 
 	- MODEL_NAME : 모델 파일의 압축폴더 이름 
@@ -28,10 +31,12 @@
 	 `kubectl apply -f pod-info.yaml`
 
  5. `http://{serverIp}:{serverPort}/` <br>
+	ex) `http://localhost:8000/` <br>
  	post 요청 실행(모델이 정상 로드되었는지 확인하기 위함) <br>
 	모델이 정상 로드 완료 되면 {"state": "done"} 이 return된다.
 
  6. `http://{serverIp}:{serverPort}/result` <br>
+ ex) `http://localhost:8000/result` <br>
 	input : {"test": input_data} <br>
 	output : {"result" : output_data}
  
@@ -56,16 +61,41 @@
 ### Tensorflow
 - ####  workspace
 	```
-	test_model/
-		└── src/
-			└── requirements.txt 
-		    └── data (test에 사용되는 data sets)
-		    └── test_model.py (model class)
-		└── model/
-			 └──checkpoint
-			 └──my_test_model.data-00000-of-00001
-			 └──my_test_model.index
-			 └──my_test_model.meta
+	│  
+	└─k8s_flask
+		│  app.py
+		│  docker-compose.yml
+		│  Dockerfile
+		│  pod-info.yaml
+		│  README.md
+		│  requirements.txt
+		│  start_celery.sh
+		│  test_model.txt
+		│  
+		├─logs
+		│      celery_info.log
+		│      gunicorn_access.log
+		│      gunicorn_error.log
+		│      my.log
+		│      
+		└─test_model
+			├─model
+			│      20201107.zip
+			│      checkpoint
+			│      my_test_model-208000.data-00000-of-00001
+			│      my_test_model-208000.index
+			│      my_test_model-208000.meta
+			│      
+			└─src
+				│  hangle.py
+				│  k8s_api_model.py
+				│  k8s_api_utils.py
+				│  requirements.txt
+				│  
+				└─data
+						ix_to_word_3000.pkl
+						naver_news_2999_even.csv
+						word_to_ix_3000.pkl   
 	```
 
  - #### Rules
@@ -75,7 +105,7 @@
 	 
 
 	```
-	@ src/k8s_api_model.py
+	@src/k8s_api_model.py
 
 	class k8s_api_model(object):
 
@@ -103,10 +133,29 @@
  ### Scikit-Learn
 - ####  workspace
 	```
-	test_model_sci/
-		└── src/
-			└── requirements.txt
-		└── model/
-			 └──my_test_model.pkl
-
+	│  
+	└─k8s_flask
+		│  app.py
+		│  docker-compose.yml
+		│  Dockerfile
+		│  pod-info.yaml
+		│  README.md
+		│  requirements.txt
+		│  start_celery.sh
+		│  test_model.txt
+		│  
+		├─logs
+		│      celery_info.log
+		│      gunicorn_access.log
+		│      gunicorn_error.log
+		│      my.log
+		│      
+		└─test_model_sci
+			├─model
+			│      20201103.zip
+			│      test_model_sci.pkl
+			│      
+			└─src
+				  requirements.txt
+				  test_model_sci.zip
 	```
