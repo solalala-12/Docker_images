@@ -1,5 +1,5 @@
 Flask
-celery==4.4.7
+celery==5.2.2
 gunicorn
 pysftp==0.2.8
 cryptography==3.2.1
